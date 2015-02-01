@@ -34,3 +34,18 @@ $ curl --data "type=rtmp&token=aBUjh123" http://streamblox.com/ingest/new
 $ curl -x DELETE http://streamblox.com/ingest/aHUASb1231hs
 {status: "success"}
 ```
+
+## List ingest points
+
+**<code>GET</code>** /ingest
+
+#### Return
+```ruby
+{status: "success", rtmp: ["ingest-point-name-a", "ingest-point-name-b"]}
+```
+
+#### Example
+```shell
+$ curl http://streamblox.com/ingest
+{status: "success", rtmp: ["aHUAas12hs", "aHUASb1231hs"]}
+```
